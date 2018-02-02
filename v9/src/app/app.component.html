@@ -1,0 +1,11 @@
+<div class="App">
+    <h1 class="App__title">Angular Exercise</h1>
+    <div class="App__switch">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">일반</a>
+        <a routerLink="/rx" routerLinkActive="active">Reactive</a>
+    </div>
+    <main class="App__content">
+        <router-outlet></router-outlet>
+    </main>
+</div>
+

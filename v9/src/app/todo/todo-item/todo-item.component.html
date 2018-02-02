@@ -1,0 +1,20 @@
+<div class="TodoItem" *ngFor="let todo of todos">
+     <input type="checkbox"
+        (change)="toggle.emit(todo.id)"
+        [checked]="todo.completed"
+        class="TodoItem__checkbox" />
+    <label class="TodoItem__title">{{todo.title}}</label>
+    <button (click)="remove.emit(todo.id)" class="TodoItem__removeButton">삭제</button>
+</div>
+
+
+<!--town-->
+<!--<div class="TodoItem" *ngFor="let do of todo">
+     <input type="checkbox"
+        (change)="onToggleTodo()"
+        [checked]="todo.completed"
+        class="TodoItem__checkbox" />
+
+     <label class="TodoItem__title">{{todo.title}}</label>
+
+</div>-->

@@ -8,7 +8,7 @@ import { Todo } from '../todo';
     styleUrls: ['./todo-item.component.less']
 })
 export class TodoItemComponent implements OnInit {
-    @Input() todo: Todo;
+    @Input() todos: Todo;
     @Output() toggle = new EventEmitter<Todo>();
     @Output() remove = new EventEmitter<Todo>();
 
@@ -18,11 +18,13 @@ export class TodoItemComponent implements OnInit {
     ngOnInit() {
     }
 
-    onToggleTodo() {
-        this.toggle.emit(this.todo);
-    }
+    // town
+    // onToggleTodo() {
+    //    this.toggle.emit(this.todos);
+    // }
 
-    onRemoveTodo() {
-        this.remove.emit(this.todo);
-    }
+    // town
+    // onRemoveTodo(id: string) {
+    //    this.remove.emit(this.todos);
+    // }
 }

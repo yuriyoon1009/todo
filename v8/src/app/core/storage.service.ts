@@ -11,7 +11,6 @@ export class StorageService {
 
     get(name: string): any {
         const item = this.storage.getItem(name);
-
         try {
             return JSON.parse(item);
         } catch (err) {

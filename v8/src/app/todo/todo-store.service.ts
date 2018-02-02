@@ -14,6 +14,7 @@ export class TodoStoreService {
     constructor(private storageService: StorageService) {
     }
 
+    // this.storageService.remove();
    // get todos(): Todo[] {
    // }
 

@@ -1,9 +1,13 @@
 <section class="TodoList">
     <div class="TodoList__creation">
-        <input id="addTodo" type="text" />
-        <button class="TodoList__createNewTodoButton">만들기</button>
+        <input id="addTodo" type="text" [(ngModel)]="newTodoTitle"/>
+        <button class="TodoList__createNewTodoButton"
+        (click)="addTodo(newTodoTitle)">만들기</button>
     </div>
 
     <ul class="TodoList__list">
+        <app-todo-item [todos]="todos"
+          (toggle)="onToggleTodo($event)"
+          (remove)="removeTodo($event)"></app-todo-item>
     </ul>
 </section>

@@ -1,0 +1,5 @@
+<div class="TodoItem">
+    <input type="checkbox" (change)="onToggleTodo()" [checked]="todo.completed" class="TodoItem__checkbox" />
+    <label class="TodoItem__title">{{todo.title}}</label>
+    <button (click)="onRemoveTodo()" class="TodoItem__removeButton">삭제</button>
+</div>
